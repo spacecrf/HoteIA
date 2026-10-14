@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Forzar el uso de la IP local 127.0.0.1 para evitar conflictos de resolución
+RewriteRule ^(.*)$ http://127.0.0.1:5000/$1 [P,L]
+
+# Configuración de seguridad
+Options -Indexes
